@@ -1,5 +1,6 @@
 body{
-font-family:Arial;	
+font-family: Helmet, Freesans, sans-serif;
+font-size:0.8em;	
 }
 header{
 position:absolute;
@@ -27,13 +28,14 @@ display: inline;
 	padding:0 10px 0px 10px;	
 }
 section{
-	position:absolute;
+	position:relative;
 	top:160px;
 	width:800px;
 	left:0;
     right:0;
     margin-left:auto;
     margin-right:auto;
+    clear:both;
 }
 article{
 	cursor:pointer;
@@ -48,27 +50,31 @@ article{
     -moz-box-shadow: 1px 1px 1px 1px #eee;
     box-shadow: 1px 1px 1px 1px #eee;	
 }
-article:hover h1{
-  -moz-transform: translateY(-40px);
-  -o-transform: translateY(-40px);
-  -webkit-transform: translateY(-40px);
-  transform: translateY(-40px);
+article:hover div.description{
+  -moz-transform: translateY(-160px);
+  -o-transform: translateY(-160px);
+  -webkit-transform: translateY(-160px);
+  transform: translateY(-160px);
 }
-article h1{
+article div.description h1{
+    line-height: 40px;
+    text-align: center;	
+    margin:0px;
+}
+article div.description{
  background-color: rgba(0,0,0,0.8);
     position: absolute;
     color: #fff;
     z-index: 100;
-    margin:0px;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out;
-    transition: all 300ms ease-out;
+
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
     width: 350px;
-    line-height: 40px;
-    text-align: center;
-    bottom: -40px;
+    height:200px;
+    bottom: -160px;
 }
 article img{
 
@@ -76,12 +82,26 @@ article img{
    width: 350px;
   height: 200px;
   object-fit: cover;
-  /*	-webkit-mask: url('http://iamvdo.me/conf/2012/kiwiparty/img/masque2.png');
-  mask: url('#mask');
-  -webkit-mask-size: 100% 100%;
-  -webkit-mask-position: center;
-  transition: -webkit-mask-size .3s;*/
+
 }
 article p{
-	display:none;
+	padding:0px 10px 5px 10px;
+	margin:0;
 }
+
+.corner-ribbon{
+  width: 200px;
+  background: #e43;
+  position: absolute;
+  top: 15px;
+  right: -65px;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.corner-ribbon.ios{background: #39d;}
+.corner-ribbon.web{background: #f54844;}
+.corner-ribbon.mixed{background: #98bf35;}
