@@ -1,0 +1,41 @@
+header{
+position:absolute;
+top:0px;
+right:0px;
+left:0px;
+height:130px;
+background-color:#FF9900;
+text-align:center;	
+}
+nav{
+position:absolute;
+top:130px;
+left:0px;
+right:0px;
+height:30px;	
+}
+nav ul{
+    text-align: center;	
+    padding:0;
+}
+nav ul li{
+display: inline;
+	list-style:none;
+	padding:0 10px 0px 10px;	
+}
+section{
+	position:absolute;
+	top:160px;
+	width:700px;
+	left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+article{
+	float:left;
+	width:300px;
+	margin-right:25px;
+	margin-left:25px;
+	display:block;	
+}
