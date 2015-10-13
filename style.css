@@ -19,6 +19,10 @@ border-radius:15px;
 -moz-border-radius:15px;
 -webkit-border-radius:15px;	
 }
+header h1{
+font-size:2.2em;
+letter-spacing:0.2em;	
+}
 
 section{
 	width:800px;
@@ -72,6 +76,7 @@ article img{
    width: 350px;
   height: 200px;
   object-fit: cover;
+  object-position: top 100%;
 
 }
 article p{
@@ -101,7 +106,7 @@ margin-top:7px;
 .corner-ribbon.web{background: #f54844;}
 .corner-ribbon.mixed{background: #98bf35;}
 #about p{
-	width:60%;
+	width:70%;
 	margin:auto;
 	padding:4px 10px;
 	text-align: justify;
